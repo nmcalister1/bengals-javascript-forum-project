@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Padyakke+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <script src="script4.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="nav nav-top">
+      <div>
+        <a href="index.html"><img class="nav-img" src="bengals_logo.png" alt="Cincinnati Bengals Logo"></a>
+      </div>
+      <ul class="nav-list">
+        <li><button type="button" class="btn night actual-btn" data-night-btn2>Night: <b>On</b></button></li>
+        <li><button type="button" class="btn login actual-btn">Log In &rArr;</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form class="form" data-forum>
+      <label for="title">Username</label>
+      <input type="text" name="title" id="title">
+      <label for="message">Password</label>
+      <input type="text" name="message" id="message">
+      <div class="no-account">Don't have an account? 	&rArr; <a href="createAccount.html" class="click" data-sign-up>Click here to sign up!</a></div>
+      <div class="btn-container">
+        <button class="btn btn-square" type="submit" data-send-btn>Sign In</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer">
+        <li class="contact"><a href="#">Contact</a></li>
+        <li class="dot">&middot;</li>
+        <li class="property"><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

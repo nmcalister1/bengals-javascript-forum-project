@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0; 
+  font-family: Montserrat, sans-serif;
+  background-color: rgb(31, 31, 31);
+}
+
+.colorred {
+  background-color: white;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B2522;
+  padding: .5rem 1rem; 
+}
+
+.nav-img{
+  margin: 0; 
+  width: 40px; 
+}
+
+.nav-top{
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1;
+}
+
+.nav-list {
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white; 
+
+  transition: color 100ms;
+}
+
+.nav-list a:hover{
+  color: #CCC;
+}
+
+.btn {
+  background-color: hsl(0, 100%, 50%);
+  color: white; 
+  border-radius: 1000000px;
+  padding: .2em 1em; 
+  text-decoration: none;
+  border: none; 
+  cursor: pointer;
+  font-size: inherit;
+  
+
+  transition: 100ms;
+}
+
+.actual-btn{
+  margin-left: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.night{
+  background-color: hsl(0, 99%, 30%);
+}
+
+.btn:hover, .btn:focus, a.btn:hover, a.btn:focus{
+  background-color: hsl(0, 100%, 40%);
+}
+
+img{
+  background-color: rgb(255, 72, 0);
+  border-radius: .3em;
+}
+
+.footer{
+  background-color: rgb(85, 85, 85);
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: .1rem; 
+
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.property{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.contact a{
+  text-decoration: none;
+  color: rgb(91, 12, 12);
+}
+
+.contact a:hover{
+  text-decoration: underline; 
+}
+
+.dot{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.property a{
+  text-decoration: none;
+  color: rgb(91, 12, 12);
+}
+
+.property a:hover{
+  text-decoration: underline;
+}
+
+@keyframes nav-enter {
+  from{
+    transform: translateY(-175%);
+  }
+}
+
+
+
+
+.form{
+  max-width: 900px;
+  margin: 0 auto; 
+  text-shadow: 5px 5px 5px black;
+  transform: translate(0px, 200px);
+}
+
+.form label{
+  color: white;
+  font-weight: bold;
+}
+
+.form > input, .form textarea{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border: 1px solid #1B2522;
+  border-radius: .3em;
+  padding: 1em;
+  color: black; 
+  font-family: inherit;
+
+  transition: border-color 100ms;
+}
+
+.form textarea{
+  resize: vertical;
+  min-height: 75px;
+  max-height: 200px;
+}
+
+.form input:focus, .form textarea:focus{
+  border-color: hsl(0, 100%, 50%);
+}
+
+.btn-container{
+  text-align: end;
+}
+
+.btn-square {
+  border-radius: .3em;
+}
+
+.no-account{
+  color: white;
+}
+
+.click{
+  text-decoration: none;
+  color: hsl(0, 100%, 50%); 
+}
+
+.click:hover{
+  color: hsl(0, 100%, 40%);
+}

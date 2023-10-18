@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Padyakke+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="forum.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="nav nav-top">
+      <div>
+        <a href="index.html"><img class="nav-img" src="bengals_logo.png" alt="Cincinnati Bengals Logo" data-bengals-img></a>
+      </div>
+      <ul class="nav-list">
+        <li><button type="button" class="btn night actual-btn" data-night-btn3>Night: <b>On</b></button></li>
+        <li><button type="button" class="btn login actual-btn">Log In &rArr;</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div data-main-forum-wrapper>
+      
+    </div>
+    <h2 class="comments">Comments</h2>
+    <div class="reply-list-wrapper" data-reply-list-wrapper>
+      
+    </div>
+
+    <div id="formContainer1"></div>
+    
+
+    <form class="form" data-forum2>
+      <label for="message">Reply</label>
+      <textarea name="message" id="message"></textarea>
+      <div class="btn-container">
+        <button class="btn btn-square" type="submit" data-send-btn2>Submit Reply</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer">
+        <li class="contact"><a href="#">Contact</a></li>
+        <li class="dot">&middot;</li>
+        <li class="property"><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <template id="render-forum-template">
+    <div class="title-header">
+      <h1 class="title" data-title></h1>
+      <h2 class="username">By: <a href="#" data-username class="username-link"></a></h2>
+      <h3 class="time" data-time></h3>
+    </div>
+    <div class="text" data-main-text></div>
+  </template>
+
+  <template id="render-forum-reply-template">
+    <div class="reply-parent">
+      <div class="comment-reply-wrapper">
+        <ul class="reply-list">
+          <div class="first-reply-list">
+            <li class="reply-number" data-reply-number></li>
+            <li class="reply-username"><a href="#" data-reply-username class="reply-username-link"></a></li>
+          </div>
+          <div class="second-reply-list">
+            <li class="reply-likes-number" data-reply-likes-number></li>
+            <li class="reply-likes" data-reply-likes></li>
+            <li><button class="like-btn btn" data-reply-like-btn></button></li>
+            <li><button class="dislike-btn btn" data-reply-dislike-btn></button></li>
+          </div>
+        </ul>
+        <div class="reply-wrapper">
+          <div class="reply" data-reply-text></div>
+          <div class="reply-flex">
+            <div class="reply-time" data-reply-time></div>
+            <button class="reply-btn btn" data-reply-reply-btn3></button>
+          </div>
+        </div>
+        <div class="comment-reply-div">
+
+        </div>
+      </div>
+      <div class="reply-div-wrapper">
+
+      </div>
+      <div data-reply-reply-wrapper>
+      
+      </div>
+    </div>
+  </template>
+
+  <template id="reply-reply-template">
+    <div class="reply-reply-list-wrapper">
+      <div class="reply-parent">
+        <ul class="reply-reply">
+          <div class="first-reply-list">
+            <li class="reply-username"><a href="#" class="reply-username-repy-link" data-reply-number></a></li>
+            <li class="reply-username"><a href="#" class="reply-username-link" data-reply-username></a></li>
+          </div>
+          <div class="second-reply-list">
+            <li class="reply-likes-number" data-reply-likes-number></li>
+            <li class="reply-likes" data-reply-likes></li>
+            <li><button class="like-btn btn" data-reply-like-btn></button></li>
+            <li><button class="dislike-btn btn" data-reply-dislike-btn></button></li>
+          </div>
+        </ul>
+        <div class="reply-reply-wrapper">
+          <div class="reply" data-reply-text></div>
+          <div class="reply-flex">
+            <div class="reply-time" data-reply-time></div>
+            <button class="reply-btn btn" data-reply-reply-btn></button>
+          </div>
+        </div>
+      </div>
+      <div data-reply-reply-template-wrapper>
+
+      </div>
+      <div data-reply-reply-wrapper>
+      
+      </div>
+    </div>
+  </template>
+</body>
+<script src="script3.js" defer></script>
+</html>

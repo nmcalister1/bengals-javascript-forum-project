@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Padyakke+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Cincinnati Bengals Forum</title>
+</head>
+<body>
+  <header>
+    <nav class="nav nav-top">
+      <div>
+        <a href="index.html"><img class="nav-img" src="bengals_logo.png" alt="Cincinnati Bengals Logo"></a>
+      </div>
+      <ul class="nav-list">
+        <li><button type="button" class="btn night actual-btn" data-night-btn>Night: <b>On</b></button></li>
+        <li><button type="button" class="btn login actual-btn" data-log-in>Log In &rArr;</button></li>
+      </ul>
+    </nav>
+    <img class="main-img" src="bengals_logo.png" alt="Cincinnati Bengals Logo">
+    <h1 class="main_title">Cincinnati Bengals Forum</h1>
+  </header>
+  <main>
+    <div class="create-thread-wrapper">
+      <a href="createThread.html" class="btn create-thread" data-create-thread-btn>Create Thread</a>
+    </div>
+    <div data-forum-wrapper>
+      
+    </div>
+    <div>
+      <ul class="next-list">
+        <li><a href="#" class="btn next-list-btn">Next</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer">
+        <li class="contact"><a href="#">Contact</a></li>
+        <li class="dot">&middot;</li>
+        <li class="property"><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <template id="forum-template">
+    <div class="forum" data-forum-parent>
+      <div class="number-wrapper">
+        <div class="number" data-number></div>
+        <div class="middot">&middot;</div>
+      </div>
+      <div class="title-wrapper">
+        <h2 class="title"><a class="title_link" data-title href=""></a></h2>
+        <div class="info">posted <span data-time>20 minutes</span> &middot; by <a class="username_link" href="#" data-username></a> &middot; <span data-comments>0</span> comments</div>
+      </div>
+    </div>
+  </template>
+</body>
+</html>

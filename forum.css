@@ -1,0 +1,398 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0; 
+  font-family: Montserrat, sans-serif;
+  background-color: rgb(31, 31, 31);
+}
+
+.colorred {
+  background-color: white;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B2522;
+  padding: .5rem 1rem; 
+}
+
+.nav-img{
+  margin: 0; 
+  width: 40px; 
+}
+
+.nav-top{
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1;
+}
+
+.nav-list {
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white; 
+
+  transition: color 100ms;
+}
+
+.nav-list a:hover{
+  color: #CCC;
+}
+
+.btn {
+  background-color: hsl(0, 100%, 50%);
+  color: white; 
+  border-radius: 1000000px;
+  padding: .2em 1em; 
+  text-decoration: none;
+  border: none; 
+  cursor: pointer;
+  font-size: inherit;
+  
+
+  transition: 100ms;
+}
+
+.actual-btn{
+  margin-left: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.night{
+  background-color: hsl(0, 99%, 30%);
+}
+
+.btn:hover, .btn:focus, a.btn:hover, a.btn:focus{
+  background-color: hsl(0, 100%, 40%);
+}
+
+img{
+  background-color: rgb(255, 72, 0);
+  border-radius: .3em;
+}
+
+.footer{
+  background-color: rgb(85, 85, 85);
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: .1rem; 
+
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.property{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.contact a{
+  text-decoration: none;
+  color: rgb(91, 12, 12);
+}
+
+.contact a:hover{
+  text-decoration: underline; 
+}
+
+.dot{
+  list-style-type: none;
+  margin: .5rem; 
+}
+
+.property a{
+  text-decoration: none;
+  color: rgb(91, 12, 12);
+}
+
+.property a:hover{
+  text-decoration: underline;
+}
+
+@keyframes nav-enter {
+  from{
+    transform: translateY(-175%);
+  }
+}
+
+
+.text{
+  border: 1px solid rgb(69, 69, 69);
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 1rem; 
+  width: 1000px;
+  background-color: rgb(69, 69, 69);
+  padding: 1rem; 
+  box-shadow: 2px 2px 2px 2px rgb(69, 69, 69);
+  border-radius: .3em;
+  font: inherit; 
+  font-size: 1.3rem;
+}
+
+.title-header{
+  border: 1px solid rgb(39, 39, 39);
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+  color: rgb(207, 207, 207);
+  margin: auto; 
+  margin-top: 7rem; 
+  width: 1000px;
+  background-color: rgb(39, 39, 39);
+  padding: 1rem; 
+  border-radius: .3em;
+}
+
+.title{
+  margin: 0; 
+  margin-bottom: .3rem; 
+  font-size: 2.5rem;
+}
+
+.time{
+  margin: 0; 
+  font-size: .7rem;
+}
+
+.username{
+  margin: 0; 
+  margin-bottom: .1rem;
+  font-size: 1rem;
+}
+
+.username-link{
+  text-decoration: none;
+  color: rgb(181, 25, 25); 
+}
+
+.username-link:hover{
+  text-decoration: underline;
+}
+
+.form{
+  width: 1000px;
+  margin: auto; 
+  text-shadow: 5px 5px 5px black;
+  transform: translate(0px, 40px);
+}
+
+.form label{
+  color: white;
+  font-weight: bold;
+}
+
+.form > input, .form textarea{
+  width: 100%;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid #1B2522;
+  border-radius: .3em;
+  padding: 1em;
+  color: black; 
+  font-family: inherit;
+
+  transition: border-color 100ms;
+}
+
+.form textarea{
+  resize: vertical;
+  min-height: 75px;
+  max-height: 200px;
+}
+
+.form input:focus, .form textarea:focus{
+  border-color: hsl(0, 100%, 50%);
+}
+
+.btn-container{
+  text-align: end;
+  margin-bottom: 5rem;
+  margin-top: 0; 
+  padding: 1rem; 
+  padding-right: 0;
+}
+
+.btn-square {
+  border-radius: .3em;
+}
+
+.comments{
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 1rem; 
+  width: 1000px;
+  padding: 1rem; 
+  font: inherit; 
+  font-size: 1.3rem;
+}
+
+.reply-list{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(39, 39, 39);
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 1rem; 
+  width: 1000px;
+  background-color: rgb(39, 39, 39);
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+  border-radius: .3em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font: inherit; 
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.reply-reply{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(39, 39, 39);
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 1rem; 
+  background-color: rgb(39, 39, 39);
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+  border-radius: .3em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font: inherit; 
+  font-size: 1.3rem;
+  list-style-type: none;
+  margin-right: 28rem; 
+  width: 850px; 
+}
+
+.first-reply-list{
+ display: flex;
+ justify-content: center;
+}
+
+.second-reply-list{
+  display: flex;
+  justify-content: center;
+}
+
+.reply-number{
+  font-size: 1rem; 
+  padding: 1rem; 
+}
+
+.reply-username{
+  font-size: 1rem; 
+  padding: 1rem; 
+}
+
+.reply-username-link{
+  text-decoration: none;
+  color: rgb(239, 30, 30);
+}
+
+.reply-username-repy-link{
+  text-decoration: none;
+  color: rgb(100, 200, 246);
+}
+
+.reply-username-link:hover, .reply-username-repy-link:hover{
+  text-decoration: underline;
+}
+
+.reply-likes-number{
+  font-size: 1rem; 
+  padding: 1rem 0;
+  color: rgb(239, 30, 30);
+}
+
+.reply-likes{
+  font-size: 1rem; 
+  padding: 1rem;
+}
+
+.like-btn{
+  font-size: 1rem; 
+  margin-top: .8rem; 
+  margin-right: .5rem; 
+}
+
+.dislike-btn{
+  font-size: 1rem; 
+  margin-top: .8rem; 
+  margin-right: .5rem; 
+}
+
+.reply-wrapper{
+  border: 1px solid rgb(69, 69, 69);
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 0; 
+  width: 1000px;
+  background-color: rgb(69, 69, 69);
+  box-shadow: 2px 2px 2px 2px rgb(69, 69, 69);
+  border-radius: .3em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font: inherit; 
+  font-size: 1.3rem;
+}
+
+.reply-reply-wrapper{
+  border: 1px solid rgb(69, 69, 69);
+  color: rgb(207, 207, 207); 
+  margin: auto; 
+  margin-top: 0; 
+  width: 850px;
+  margin-right: 28rem; 
+  background-color: rgb(69, 69, 69);
+  box-shadow: 2px 2px 2px 2px rgb(69, 69, 69);
+  border-radius: .3em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font: inherit; 
+  font-size: 1.3rem;
+}
+
+.reply{
+  padding: 1rem; 
+  font-size: 1.2rem;
+}
+
+.reply-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.reply-time{
+  padding: 1rem; 
+  font-size: .8rem;
+}
+
+.reply-btn{
+  margin: 1rem; 
+  font-size: 1rem;
+  background-color: rgb(91, 12, 12);
+}
+
